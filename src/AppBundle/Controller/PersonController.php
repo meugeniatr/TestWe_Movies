@@ -85,7 +85,7 @@ class PersonController extends Controller
     }
 
     /**
-     * @Route("/edit/{person}", name="deletePerson")
+     * @Route("/delete/{person}", name="deletePerson")
      * @ParamConverter("person", class="AppBundle:Person")
      * @param Person $person
      * @return Response
@@ -100,7 +100,7 @@ class PersonController extends Controller
     }
 
     /**
-     * @Route("/{person}/movies", name="deletePerson")
+     * @Route("/{person}/movies", name="showMovies")
      * @ParamConverter("person", class="AppBundle:Person")
      * @param Person $person
      * @return Response
