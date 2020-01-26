@@ -15,6 +15,7 @@ class PersonService
 
     public function savePerson(Person $person) {
         $this->em->persist($person);
+        $this->em->flush();
     }
 
     public function deletePerson(Person $person) {
