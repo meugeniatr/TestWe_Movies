@@ -52,7 +52,7 @@ class Movie
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\MovieHasPeople", mappedBy="movie", cascade={"persist", "merge"})
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\MovieHasPeople", mappedBy="movie", cascade={"persist", "remove", "merge"})
      */
     private $people;
 

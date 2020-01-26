@@ -18,8 +18,8 @@ class MovieRepository extends \Doctrine\ORM\EntityRepository
         $qb = $this->createQueryBuilder('m');
 
         $qb
-            ->join('m.person', 'p')
-            ->where($qb->expr()->eq('p.id', ':person'))
+            ->join('m.people', 'p')
+            ->where($qb->expr()->eq('p.person', ':person'))
             ->setParameter('person', $person->getId())
         ;
 

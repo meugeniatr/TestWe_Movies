@@ -32,7 +32,7 @@ class MovieHasPeople
      *
      * @ORM\Id
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Person", inversedBy="movies", cascade={"persist", "remove", "merge"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Person", inversedBy="movies", cascade={"persist", "merge"})
      * @ORM\JoinColumns({
      *  @ORM\JoinColumn(name="people_id", referencedColumnName="id")
      * })
@@ -44,7 +44,7 @@ class MovieHasPeople
      *
      * @ORM\Id
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Movie", inversedBy="people", cascade={"persist", "remove", "merge"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Movie", inversedBy="people", cascade={"persist", "merge"})
      * @ORM\JoinColumns({
      *  @ORM\JoinColumn(name="movie_id", referencedColumnName="id")
      * })
