@@ -23,7 +23,7 @@ class ShowingForm extends AbstractType
             ])
             ->add('is3D', CheckboxType::class, [
                 "label" => "3D ?",
-                'mapped' => false
+                'required' => false
             ])
             ->add('movie', EntityType::class, [
                 "class" => Movie::class,
